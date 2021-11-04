@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom-event.css">
+</head>
+<body onload="checkCookies()">
+    <h1 onclick="this.innerHTML='Cereal!'">
+        What is my favorite food?
+    </h1>
+    
+
+    <h1 onclick="changeColor(this)">
+        Click to change color
+    </h1>
+
+    <button id="myBtn">
+        Click ME !!!
+    </button>
+
+    <input type="text" id="words" oninput="removeLetterFromH1()">
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="box">
+        Mouse Over Me
+    </div>
+
+    <script src="dom-event.js"></script>
+</body>
+</html>
